@@ -1,6 +1,8 @@
-\# 📊 HR Analytics – Employee Attrition \& Performance Analysis
+<p align="center">
+  <img src="7_Images/HR_Analytics_Cover.png" alt="HR Analytics - Employee Attrition & Performance Analysis" width="100%">
+</p>
 
-
+# 📊 HR Analytics – Employee Attrition & Performance Analysis
 
 \## 📌 Project Overview
 
