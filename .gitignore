@@ -1,0 +1,20 @@
+# Windows system files
+desktop.ini
+Thumbs.db
+
+# Jupyter temporary/checkpoint files
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Power BI source file
+4_PowerBI/*.pbix
+
+# Tableau packaged workbook
+5_Tableau/*.twbx
+
+# Raw/private dataset
+1_Data/Raw_Data/
+
+# Python cache
+__pycache__/
+*.pyc
