@@ -1,338 +1,1120 @@
-<p align="center">
-  <img src="4_Images/FMCG_Sales_Performance_Dashboard-1.png" alt="FMCG Sales Performance Dashboard" width="100%">
-</p>
+\# 📊 HR Analytics – Employee Attrition \& Performance Analysis
 
-<h1 align="center">📊 FMCG Sales Performance Dashboard</h1>
 
-<p align="center">
-  <strong>Interactive Sales & Profitability Analysis using Microsoft Power BI</strong>
-</p>
 
-<p align="center">
-  <strong>2023–2025 | Syntecxhub Data Analysis Internship | Project 1</strong>
-</p>
+\## 📌 Project Overview
 
-📌 Project Overview
 
-The FMCG Sales Performance Dashboard is an interactive Power BI project developed as part of the Syntecxhub Data Analysis Internship.
 
-The project analyzes FMCG sales data from 2023–2025 to understand sales trends, revenue, profitability, product performance, regional performance, customer types, and sales channels.
+\*\*HR Analytics – Employee Attrition \& Performance Analysis\*\* is an end-to-end data analytics project focused on understanding employee workforce composition, attrition patterns, compensation, job satisfaction, work-life balance, business travel, and employee retention.
 
-The dashboard is designed to convert transactional sales data into clear and actionable business insights.
 
-🎯 Business Objectives
 
-Analyze monthly, quarterly, and yearly sales performance.
+The project follows a complete analytics workflow:
 
-Track revenue and profit.
 
-Identify top-selling and high-profit products.
 
-Compare sales and profitability across regions.
+\*\*Raw HR Data → SQL Server → Python EDA → Power BI → Tableau → Business Insights\*\*
 
-Compare performance across product categories.
 
-Analyze sales-channel performance.
 
-Monitor important sales and profitability KPIs.
+The main objective is to transform raw employee data into meaningful business insights that can help HR teams understand employee attrition and identify factors associated with employee turnover.
 
-Build an interactive business dashboard using Power BI.
 
-📂 Dataset
 
-FMCG Sales & Profit Dataset (2023–2025)
+\---
 
-Source: Kaggle
 
-Kaggle Source:
-https://www.kaggle.com/code/jek1wantaufik/fmcg-sales-profit-dataset-2023-2025/input
 
-The dataset contains transactional FMCG sales information covering products, customers, regions, sales channels, discounts, costs, revenue, and profit.
+\## 🎯 Business Objectives
 
-Main Fields
 
-Category
 
-Fields
+The project aims to answer important HR business questions such as:
 
-Order & Time
 
-Order ID, Order Date, Year, Quarter, Month
 
-Location
+\* How many employees are currently in the organization?
 
-Region, Country, City
+\* What is the overall employee attrition rate?
 
-Sales
+\* Which departments have higher employee attrition?
 
-Sales Person, Sales Channel, Customer Type
+\* Which job roles experience higher employee turnover?
 
-Promotion
+\* How does age relate to employee attrition?
 
-Promotion Type, Discount %
+\* How does salary relate to employee turnover?
 
-Product
+\* Does overtime influence employee attrition?
 
-Product Category, Brand, Product Name, SKU
+\* How does job satisfaction relate to attrition?
 
-Volume & Price
+\* Does work-life balance affect employee retention?
 
-Units Sold, Unit Price
+\* Does business travel influence employee turnover?
 
-Financials
+\* How does employee tenure relate to attrition?
 
-Gross Sales, Marketing Spend, COGS, Logistics Cost, Net Revenue, Profit
+\* Which employee segments may require greater retention attention?
 
-Profitability
 
-Profit Margin %
 
-🧹 Data Preparation
+\---
 
-The dataset was imported into Power BI and prepared using Power Query.
 
-The preparation process included:
 
-Reviewing missing values
+\# 🔄 Project Workflow
 
-Checking duplicate records
 
-Validating column data types
 
-Preparing date fields for time-based analysis
+```text
 
-Reviewing sales, cost, revenue, and profit fields
+Raw HR Dataset
 
-Creating the required calculated measures and KPIs in Power BI
+&#x20;     ↓
 
-📊 Dashboard Pages
+SQL Server
 
-Page 1 — Executive Sales Overview
+Data Cleaning + Validation + Advanced SQL Analysis
 
-Provides a high-level view of overall business performance.
+&#x20;     ↓
 
-KPIs
+Python
 
-Total Revenue
+Exploratory Data Analysis + Visualization
 
-Total Profit
+&#x20;     ↓
 
-Total Orders
+Power BI
 
-Total Units Sold
+Interactive Business Intelligence Dashboards
 
-Profit Margin %
+&#x20;     ↓
 
-Sales Growth %
+Tableau
 
-Visuals
+Interactive HR Analytics Dashboards
 
-Monthly Sales Trend
+&#x20;     ↓
 
-Sales by Customer Type
+Business Insights
 
-Sales by Sales Channel
+```
 
-Sales by Region
 
-Sales by Product Category
 
-Top 10 Selling Products
+\---
 
-Slicers
 
-Year
 
-Quarter
+\# 🗄️ 1. SQL Server – Data Preparation \& Analysis
 
-Month
 
-Page 2 — Detailed Sales & Profitability Analysis
 
-Provides a deeper analysis of profitability and operational performance.
+SQL Server was used for data storage, data cleaning, validation, KPI analysis, and advanced analytical queries.
 
-KPIs
 
-Average Order Value
 
-Average Profit per Order
+\### Key Activities
 
-Average Discount %
 
-Average Profit Margin
 
-Revenue per Unit
+\* Imported the HR dataset into SQL Server
 
-Profit per Unit
+\* Created the HR analytics database
 
-Visuals
+\* Created the `HR\_Data` table
 
-Profit by Product Category
+\* Validated data structure and records
 
-Sales by Product Category
+\* Removed unnecessary columns such as:
 
-Revenue by Sales Channel
 
-Profit by Region
 
-Regional Performance
+&#x20; \* `EmployeeCount`
 
-Top 10 Products by Profit
+&#x20; \* `Over18`
 
-Slicers
+&#x20; \* `StandardHours`
 
-Year
+\* Converted the `Attrition` field from Yes/No into a binary `1/0` flag
 
-Region
+\* Calculated employee and attrition KPIs
 
-Product Category
+\* Performed department-level analysis
 
-Customer Segment
+\* Performed salary ranking analysis
 
-🖼️ Dashboard Screenshots
+\* Identified high-risk departments
 
-1. Executive Sales Overview
 
-<p align="center">
-  <img src="4_Images/FMCG_Sales_Performance_Dashboard-1.png" alt="Executive Sales Overview" width="100%">
-</p>
 
-2. Detailed Sales & Profitability Analysis
+\### Advanced SQL Concepts Used
 
-<p align="center">
-  <img src="4_Images/FMCG_Sales_Performance_Dashboard-2.png" alt="Detailed Sales and Profitability Analysis" width="100%">
-</p>
 
-🔍 Key Analysis Areas
 
-📈 Sales Trend Analysis
+\* `SELECT`
 
-Monthly, quarterly, and yearly sales performance is analyzed to understand business growth and fluctuations.
+\* `WHERE`
 
-🛍️ Product Analysis
+\* `GROUP BY`
 
-Product categories and individual products are compared based on sales and profitability.
+\* `CASE`
 
-🌍 Regional Analysis
+\* Aggregate Functions
 
-Sales and profit are compared across different geographical regions.
+\* Conditional Aggregation
 
-🛒 Sales Channel Analysis
+\* CTEs (Common Table Expressions)
 
-Revenue contribution is compared across available sales channels.
+\* Window Functions
 
-💰 Profitability Analysis
+\* Ranking Functions
 
-Profit, profit margin, discount, revenue per unit, and profit per order are used to understand business profitability.
 
-💡 Business Insights
 
-The dashboard helps business users:
+\---
 
-Identify high-performing products and categories
 
-Understand which regions contribute strongly to sales and profit
 
-Compare different sales channels
+\# 🐍 2. Python – Exploratory Data Analysis
 
-Monitor sales growth over time
 
-Evaluate profitability beyond revenue
 
-Analyze the impact of discounts and costs on profit
+Python was used for exploratory data analysis, data validation, visualization, and preparation of the cleaned dataset.
 
-Make data-driven sales and business decisions
 
-🛠️ Tools & Technologies
 
-Tool / Technology
+\### Libraries Used
 
-Purpose
 
-Microsoft Power BI
 
-Dashboard development and data visualization
+\* Pandas
 
-Power Query
+\* NumPy
 
-Data preparation and transformation
+\* Matplotlib
 
-DAX
+\* Jupyter Notebook
 
-KPI and calculated measure creation
 
-CSV Dataset
 
-Source data
+\### EDA Activities
 
-GitHub
 
-Project version control and portfolio
 
-Kaggle
+\* Loaded and inspected the dataset
 
-Dataset source
+\* Checked dataset structure
 
-Note: This project was developed using Power BI only for analysis and dashboard development. Python and SQL were not used in this project.
+\* Performed data cleaning
 
-📁 Project Structure
+\* Analyzed employee attrition
 
-Syntecxhub_FMCG_Sales_Performance_Dashboard/
+\* Analyzed department-wise attrition
+
+\* Examined salary distributions
+
+\* Analyzed employee age patterns
+
+\* Studied relationships between numerical variables
+
+\* Created correlation analysis
+
+
+
+\### Visualizations Created
+
+
+
+\* Attrition Pie Chart
+
+\* Department-wise Attrition Bar Chart
+
+\* Box Plots
+
+\* Correlation Heatmap
+
+
+
+\### Python Files
+
+
+
+```text
+
+HR\_EDA.ipynb
+
+cleaned\_data.csv
+
+```
+
+
+
+\---
+
+
+
+\# 📊 3. Power BI – Business Intelligence Dashboard
+
+
+
+Power BI was used to create interactive HR dashboards using DAX measures and business-oriented visualizations.
+
+
+
+\### Core DAX Measures
+
+
+
+\* Total Employees
+
+\* Active Employees
+
+\* Attrition Employees
+
+\* Attrition Rate
+
+\* Average Monthly Income
+
+
+
+\### Power BI Dashboards
+
+
+
+\#### Dashboard 1 – Executive Overview
+
+
+
+Provides a high-level overview of:
+
+
+
+\* Workforce size
+
+\* Employee attrition
+
+\* Attrition rate
+
+\* Workforce demographics
+
+\* Department-level trends
+
+
+
+\#### Dashboard 2 – Employee Demographics \& Job Factors
+
+
+
+Analyzes employee demographics and job-related factors associated with employee attrition.
+
+
+
+\#### Dashboard 3 – Salary, Performance \& Attrition Insights
+
+
+
+Focuses on:
+
+
+
+\* Salary
+
+\* Performance
+
+\* Employee retention
+
+\* Attrition-related factors
+
+
+
+\### Additional Features
+
+
+
+\* Interactive filters
+
+\* KPI cards
+
+\* Corporate dashboard theme
+
+\* Page navigation
+
+\* Data Dictionary \& Metric Documentation
+
+
+
+\---
+
+
+
+\# 📈 4. Tableau – HR Analytics Dashboards
+
+
+
+Tableau was used to recreate and enhance the HR analytics solution using the same business logic and analytical definitions.
+
+
+
+The final Tableau workbook contains \*\*2 interactive dashboards\*\*.
+
+
+
+\---
+
+
+
+\# 📊 Dashboard 1 – HR Workforce \& Attrition Overview
+
+
+
+This dashboard provides an overall view of the organization's workforce and employee attrition.
+
+
+
+\## KPIs
+
+
+
+\* Total Employees
+
+\* Active Employees
+
+\* Attrition Employees
+
+\* Attrition Rate
+
+\* Average Age
+
+\* Average Monthly Income
+
+\* Average Years at Company
+
+
+
+\## Charts
+
+
+
+| Analysis                      | Chart Type     |
+
+| ----------------------------- | -------------- |
+
+| Attrition by Department       | Horizontal Bar |
+
+| Attrition by Job Role         | Horizontal Bar |
+
+| Attrition by Age Group        | Bar Chart      |
+
+| Attrition by Gender           | Donut Chart    |
+
+| Attrition by Overtime         | Bar Chart      |
+
+| Attrition by Job Satisfaction | Bar Chart      |
+
+| Attrition by Salary Band      | Bar Chart      |
+
+
+
+\## Filters
+
+
+
+\* Department
+
+\* Job Role
+
+\* Gender
+
+\* Overtime
+
+
+
+\---
+
+
+
+\# 📊 Dashboard 2 – HR Attrition \& Performance Analysis
+
+
+
+This dashboard focuses on deeper analysis of employee attrition and performance-related factors.
+
+
+
+\## KPIs
+
+
+
+\* Total Employees
+
+\* Attrition Employees
+
+\* Attrition Rate
+
+\* Average Monthly Income
+
+\* Average Years at Company
+
+
+
+\## Charts
+
+
+
+| Analysis                       | Chart Type     |
+
+| ------------------------------ | -------------- |
+
+| Attrition Rate by Department   | Horizontal Bar |
+
+| Attrition Rate by Job Role     | Horizontal Bar |
+
+| Attrition by Salary Band       | Column Bar     |
+
+| Attrition by Years at Company  | Line Chart     |
+
+| Attrition by Work-Life Balance | Column Bar     |
+
+| Attrition by Business Travel   | Bar Chart      |
+
+
+
+\## Filters
+
+
+
+\* Department
+
+\* Job Role
+
+\* Gender
+
+\* Age Group
+
+\* Overtime
+
+
+
+\---
+
+
+
+\# 🧮 5. Calculated Fields
+
+
+
+Several calculated fields were created in Tableau to support employee segmentation and attrition analysis.
+
+
+
+\## Attrition Rate
+
+
+
+```text
+
+Attrition Employees / Total Employees
+
+```
+
+
+
+The Attrition Rate measures the percentage of employees who left the organization.
+
+
+
+\---
+
+
+
+\## Age Group
+
+
+
+Employees were segmented into five age groups:
+
+
+
+| Age Group | Age Range    |
+
+| --------- | ------------ |
+
+| Under 25  | Below 25     |
+
+| 25–34     | 25 to 34     |
+
+| 35–44     | 35 to 44     |
+
+| 45–54     | 45 to 54     |
+
+| 55+       | 55 and above |
+
+
+
+\---
+
+
+
+\## Salary Band
+
+
+
+Employees were categorized into four monthly income bands:
+
+
+
+| Salary Band | Monthly Income   |
+
+| ----------- | ---------------- |
+
+| Below 3K    | Below 3,000      |
+
+| 3K–6K       | 3,000–6,000      |
+
+| 6K–10K      | 6,000–10,000     |
+
+| 10K+        | 10,000 and above |
+
+
+
+\---
+
+
+
+\# 📌 6. Key Metrics
+
+The final analysis uses the following verified project-level metrics:
+
+| Metric | Value |
+| --- | ---: |
+| Total Employees | 1,470 |
+| Active Employees | 1,233 |
+| Attrition Employees | 237 |
+| Attrition Rate | 16.12% |
+| Average Age | 36.92 |
+| Average Monthly Income | 6,502.93 |
+| Average Years at Company | 7.01 |
+| Average Job Satisfaction | 2.73 |
+| Average Work-Life Balance | 2.76 |
+| Average Performance Rating | 3.15 |
+
+| Metric | Description |
+| --- | --- |
+| Total Employees | Total number of employees in the dataset |
+| Active Employees | Employees who have not left the organization |
+| Attrition Employees | Employees who left the organization |
+| Attrition Rate | Percentage of employees who left |
+| Average Age | Average age of employees |
+| Average Monthly Income | Average monthly income of employees |
+| Average Years at Company | Average employee tenure |
+| Average Job Satisfaction | Average job satisfaction rating |
+| Average Work-Life Balance | Average work-life balance rating |
+| Average Performance Rating | Average performance rating |
+
+# 📖 7. Data Dictionary
+
+
+
+| Column          | Description                                |
+
+| --------------- | ------------------------------------------ |
+
+| EmployeeNumber  | Unique employee identifier                 |
+
+| Age             | Employee age                               |
+
+| Gender          | Employee gender                            |
+
+| Department      | Employee department                        |
+
+| JobRole         | Employee job role                          |
+
+| MonthlyIncome   | Employee monthly income                    |
+
+| YearsAtCompany  | Number of years spent at the company       |
+
+| Attrition       | Whether the employee left the organization |
+
+| Overtime        | Whether the employee works overtime        |
+
+| JobSatisfaction | Employee job satisfaction rating           |
+
+| WorkLifeBalance | Employee work-life balance rating          |
+
+| BusinessTravel  | Frequency of business travel               |
+
+| EducationField  | Employee education field                   |
+
+| JobLevel        | Employee job level                         |
+
+| JobInvolvement  | Employee job involvement level             |
+
+
+
+\---
+
+
+
+\# 🔎 8. Key Insights
+
+
+
+The analysis focuses on identifying important employee attrition patterns, including:
+
+
+
+\* Departments with comparatively higher employee attrition
+
+\* Job roles with higher employee turnover
+
+\* Attrition patterns across different age groups
+
+\* Relationship between overtime and employee attrition
+
+\* Salary bands associated with employee turnover
+
+\* Relationship between job satisfaction and attrition
+
+\* Relationship between work-life balance and attrition
+
+\* Business travel patterns associated with employee attrition
+
+\* Employee tenure and attrition patterns
+
+
+
+These insights can help HR teams identify employee segments that may require additional retention strategies.
+
+
+
+\---
+
+
+
+\# 🛠️ 9. Tools \& Technologies
+
+
+
+\## Data Analysis
+
+
+
+\* Python
+
+\* Pandas
+
+\* NumPy
+
+\* Matplotlib
+
+\* Jupyter Notebook
+
+
+
+\## Database
+
+
+
+\* Microsoft SQL Server
+
+\* SQL
+
+\* CTEs
+
+\* Window Functions
+
+
+
+\## Business Intelligence
+
+
+
+\* Microsoft Power BI
+
+\* DAX
+
+\* Tableau
+
+
+
+\## Development \& Version Control
+
+
+
+\* Git
+
+\* GitHub
+
+
+
+\---
+
+
+
+\# 🎯 10. Skills Demonstrated
+
+
+
+This project demonstrates practical skills in:
+
+
+
+\* Data Cleaning
+
+\* Data Validation
+
+\* Exploratory Data Analysis
+
+\* SQL Querying
+
+\* Advanced SQL
+
+\* CTEs
+
+\* Window Functions
+
+\* Data Aggregation
+
+\* KPI Development
+
+\* DAX
+
+\* Tableau Calculated Fields
+
+\* Data Visualization
+
+\* Dashboard Development
+
+\* Interactive Filtering
+
+\* Dashboard Navigation
+
+\* Business Analysis
+
+\* HR Analytics
+
+\* Data Storytelling
+
+\* Cross-Platform BI Development
+
+
+
+\---
+
+
+
+\# 🧭 11. Dashboard Navigation
+
+
+
+The Tableau dashboards include an interactive navigation bar that allows users to switch between the two dashboards:
+
+
+
+```text
+
+HR Workforce \& Attrition Overview
+
+&#x20;             ↕
+
+HR Attrition \& Performance Analysis
+
+```
+
+
+
+The active dashboard button uses a highlighted background to clearly indicate the current dashboard.
+
+
+
+\---
+
+
+
+\# 🎨 12. Dashboard Design \& Formatting
+
+
+
+The dashboards were designed with a clean, professional, and business-oriented layout.
+
+
+
+\### Design Features
+
+
+
+\* Consistent dashboard titles
+
+\* KPI card formatting
+
+\* Consistent chart titles
+
+\* Proper chart alignment
+
+\* Structured rows and columns
+
+\* Balanced dashboard spacing
+
+\* Organized filters
+
+\* Interactive navigation
+
+\* Consistent visual hierarchy
+
+\* Business-focused dashboard presentation
+
+
+
+\---
+
+
+
+\# 📁 13. Project Structure
+
+The GitHub version of this project is organized to showcase the analysis while avoiding publication of the original Power BI and Tableau packaged files.
+
+```text
+HR_Analytics_Portfolio_Project/
 │
 ├── README.md
 │
 ├── 1_Data/
-│   └── fmcg_sales_marketing_profitability_2023_2025.csv
+│   └── Cleaned_Data/
+│       └── cleaned_data.csv
 │
-├── 2_PowerBI/
-│   ├── FMCG_Sales_Performance_Dashboard.pbix
-│   └── FMCG_Sales_Performance_Dashboard.pdf
+├── 2_SQL/
+│   └── HR_Analytics_SQL.sql
 │
-├── 3_Documentation/
+├── 3_Python/
+│   └── HR_EDA.ipynb
+│
+├── 4_PowerBI/
+│   └── HR_Analytics_Dashboard.pdf
+│
+├── 6_Documentation/
+│   ├── Project_Documentation.docx
 │   └── Project_Documentation.pdf
 │
-└── 4_Images/
-    ├── FMCG_Sales_Performance_Dashboard-1.png
-    └── FMCG_Sales_Performance_Dashboard-2.png
+└── 7_Images/
+    ├── Jupyter Notebook/
+    │   ├── age_distribution_histogram.png
+    │   ├── correlation_heatmap.png
+    │   ├── department_attrition_bar_chart.png
+    │   └── income_vs_attrition_boxplot.png
+    │
+    ├── Power BI/
+    │   ├── Dashboard_1_Executive_Overview.png
+    │   ├── Dashboard_2_Employee_Demographics_Job_Factors.png
+    │   ├── Dashboard_3_Salary_Performance_Attrition.png
+    │   └── Data_Dictionary_Metric_Documentation.png
+    │
+    └── Tableau/
+        ├── Dashboard_1_Workforce_Overview.png
+        └── Dashboard_2_Attrition_Performance.png
+```
 
-🎓 Internship Information
+### Files intentionally excluded from the public GitHub repository
 
-Detail
+* Original Power BI `.pbix` file
+* Original Tableau `.twbx` file
+* Raw HR dataset
+* Jupyter checkpoint files
+* Windows `desktop.ini`
 
-Information
+The cleaned dataset is included as the reproducible public analysis dataset.
 
-Organization
+# 🖼️ 14. Dashboard Screenshots
 
-Syntecxhub
+## Power BI
 
-Internship
+### Dashboard 1 – Executive HR Overview
+![Power BI Dashboard 1](7_Images/Power%20BI/Dashboard_1_Executive_Overview.png)
 
-Data Analysis Internship
+### Dashboard 2 – Department Analysis
+![Power BI Dashboard 2](7_Images/Power%20BI/Dashboard_2_Employee_Demographics_Job_Factors.png)
 
-Project
+### Dashboard 3 – Employee Insights
+![Power BI Dashboard 3](7_Images/Power%20BI/Dashboard_3_Salary_Performance_Attrition.png)
 
-Sales Performance Dashboard
+### Data Dictionary & Metric Documentation
+![Power BI Data Dictionary](7_Images/Power%20BI/Data_Dictionary_Metric_Documentation.png)
 
-Project Number
+## Tableau
 
-Project 1
+### Dashboard 1 – Workforce Overview
+![Tableau Dashboard 1](7_Images/Tableau/Dashboard_1_Workforce_Overview.png)
 
-This project follows the internship requirement to analyze a sales dataset and create an interactive dashboard using Power BI.
+### Dashboard 2 – HR Attrition & Performance Analysis
+![Tableau Dashboard 2](7_Images/Tableau/Dashboard_2_Attrition_Performance.png)
 
-📌 Conclusion
+## Jupyter Notebook
 
-The FMCG Sales Performance Dashboard provides an interactive view of sales and profitability across time, products, regions, customer types, and sales channels.
+### EDA Visualizations
 
-The project demonstrates practical skills in:
+![Age Distribution](7_Images/Jupyer%20Notebook/age_distribution_histogram.png)
 
-Data Preparation → Power Query → DAX → KPI Creation → Data Visualization → Dashboard Design → Business Analysis
+![Correlation Heatmap](7_Images/Jupyer%20Notebook/correlation_heatmap.png)
 
-using Microsoft Power BI.
+![Department Attrition](7_Images/Jupyer%20Notebook/department_attrition_bar_chart.png)
 
-👨‍💻 Author
+![Income vs Attrition](7_Images/Jupyer%20Notebook/income_vs_attrition_boxplot.png)
 
-Ravindra Deo Kuldeep
+# 📦 15. BI Source Files
 
-Data Analytics Portfolio Project
+The original Power BI and Tableau source files were used during dashboard development but are intentionally not included in the public GitHub repository.
 
-⭐ If you find this project useful, feel free to explore the repository.
+The repository instead includes:
+
+* Power BI dashboard PDF
+* Power BI dashboard screenshots
+* Tableau dashboard screenshots
+* Final project documentation
+* SQL analysis
+* Python EDA notebook
+* Cleaned dataset
+
+This keeps the portfolio repository focused on reproducible analysis and public-facing project evidence.
+
+# 🏆 16. Project Outcome
+
+
+
+This project demonstrates an end-to-end approach to solving a real-world HR analytics problem.
+
+
+
+Starting from raw employee data, the project covers:
+
+
+
+```text
+
+Data Preparation
+
+&#x20;     ↓
+
+SQL Analysis
+
+&#x20;     ↓
+
+Python EDA
+
+&#x20;     ↓
+
+Power BI Development
+
+&#x20;     ↓
+
+Tableau Development
+
+&#x20;     ↓
+
+Dashboard Design
+
+&#x20;     ↓
+
+Business Insights
+
+```
+
+
+
+The final solution provides an interactive analytical framework for understanding:
+
+
+
+\* Workforce composition
+
+\* Employee attrition
+
+\* Compensation
+
+\* Job satisfaction
+
+\* Work-life balance
+
+\* Business travel
+
+\* Employee tenure
+
+\* Department and job-role level attrition
+
+
+
+The project also demonstrates the ability to apply consistent business logic across \*\*SQL, Python, Power BI, and Tableau\*\*, making it a strong portfolio project for \*\*Data Analyst and Business Analyst roles\*\*.
+
+
+
+\---
+
+
+
+\# 🔐 Public Repository Notes
+
+This GitHub repository is prepared as a portfolio version of the project. The public version includes the cleaned dataset, SQL analysis, Python notebook, dashboard PDF/screenshots, and final documentation. Original `.pbix` and `.twbx` files are intentionally excluded from the public repository.
+
+The analysis uses `1 = Left` and `0 = Active` for the binary attrition representation used in the project.
+
+---
+
+# 👨‍💻 Author
+
+
+
+\## ARKAY
+
+
+
+\*\*Data Analytics | SQL | Python | Power BI | Tableau\*\*
+
+
+
+\---
+
+
+
+\# ⭐ Project Highlights
+
+
+
+```text
+
+✔ End-to-End HR Analytics Project
+
+✔ SQL Server Data Analysis
+
+✔ Advanced SQL Queries
+
+✔ Python Exploratory Data Analysis
+
+✔ Power BI Dashboard Development
+
+✔ Tableau Dashboard Development
+
+✔ DAX Measures
+
+✔ Tableau Calculated Fields
+
+✔ KPI Development
+
+✔ Interactive Filters
+
+✔ Dashboard Navigation
+
+✔ Business-Oriented Insights
+
+✔ Data Visualization
+
+✔ Data Storytelling
+
+✔ Cross-Platform BI Development
+
+✔ Portfolio-Ready Project
+
+```
+
+
+
