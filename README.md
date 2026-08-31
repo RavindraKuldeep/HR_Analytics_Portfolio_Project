@@ -853,7 +853,7 @@ The analysis uses `1 = Left` and `0 = Active` for the binary attrition represent
 
 ## 👨‍💻 Author
 
-### ARKAY
+### Ravindra Deo Kuldeep
 
 **Data Analytics · SQL · Python · Power BI · Tableau**
 
