@@ -1,72 +1,89 @@
-\# 📊 HR Analytics – Employee Attrition \& Performance Analysis
+<div align="center">
 
+# 📊 HR Analytics – Employee Attrition & Performance Analysis
 
+<p>
+  <img src="7_Images/HR_Analytics_Cover.png" alt="HR Analytics Project Cover" width="900">
+</p>
 
-\## 📌 Project Overview
+**End-to-End HR Analytics Portfolio Project**
 
+`SQL Server` · `Python` · `Power BI` · `Tableau`
 
+</div>
 
-\*\*HR Analytics – Employee Attrition \& Performance Analysis\*\* is an end-to-end data analytics project focused on understanding employee workforce composition, attrition patterns, compensation, job satisfaction, work-life balance, business travel, and employee retention.
+---
 
+## 📑 Table of Contents
 
+- [📌 Project Overview](#-project-overview)
+- [🎯 Business Objectives](#-business-objectives)
+- [🔄 Project Workflow](#-project-workflow)
+- [🗄️ SQL Server – Data Preparation & Analysis](#️-1-sql-server--data-preparation--analysis)
+- [🐍 Python – Exploratory Data Analysis](#-2-python--exploratory-data-analysis)
+- [📊 Power BI – Business Intelligence Dashboard](#-3-power-bi--business-intelligence-dashboard)
+- [📈 Tableau – HR Analytics Dashboards](#-4-tableau--hr-analytics-dashboards)
+- [🧮 Calculated Fields](#-5-calculated-fields)
+- [📌 Key Metrics](#-6-key-metrics)
+- [📖 Data Dictionary](#-7-data-dictionary)
+- [🔎 Key Insights](#-8-key-insights)
+- [🛠️ Tools & Technologies](#️-9-tools--technologies)
+- [🎯 Skills Demonstrated](#-10-skills-demonstrated)
+- [🧭 Dashboard Navigation](#-11-dashboard-navigation)
+- [🎨 Dashboard Design & Formatting](#-12-dashboard-design--formatting)
+- [📁 Project Structure](#-13-project-structure)
+- [🖼️ Dashboard Screenshots](#️-14-dashboard-screenshots)
+- [📦 BI Source Files](#-15-bi-source-files)
+- [🏆 Project Outcome](#-16-project-outcome)
+- [🔐 Public Repository Notes](#-public-repository-notes)
+- [👨‍💻 Author](#-author)
+- [⭐ Project Highlights](#-project-highlights)
+
+---
+
+## 📌 Project Overview
+
+**HR Analytics – Employee Attrition & Performance Analysis** is an end-to-end data analytics project focused on understanding employee workforce composition, attrition patterns, compensation, job satisfaction, work-life balance, business travel, and employee retention.
 
 The project follows a complete analytics workflow:
 
-
-
-\*\*Raw HR Data → SQL Server → Python EDA → Power BI → Tableau → Business Insights\*\*
-
-
+**Raw HR Data → SQL Server → Python EDA → Power BI → Tableau → Business Insights**
 
 The main objective is to transform raw employee data into meaningful business insights that can help HR teams understand employee attrition and identify factors associated with employee turnover.
 
+---
 
-
-\---
-
-
-
-\## 🎯 Business Objectives
-
-
+## 🎯 Business Objectives
 
 The project aims to answer important HR business questions such as:
 
+* How many employees are currently in the organization?
 
+* What is the overall employee attrition rate?
 
-\* How many employees are currently in the organization?
+* Which departments have higher employee attrition?
 
-\* What is the overall employee attrition rate?
+* Which job roles experience higher employee turnover?
 
-\* Which departments have higher employee attrition?
+* How does age relate to employee attrition?
 
-\* Which job roles experience higher employee turnover?
+* How does salary relate to employee turnover?
 
-\* How does age relate to employee attrition?
+* Does overtime influence employee attrition?
 
-\* How does salary relate to employee turnover?
+* How does job satisfaction relate to attrition?
 
-\* Does overtime influence employee attrition?
+* Does work-life balance affect employee retention?
 
-\* How does job satisfaction relate to attrition?
+* Does business travel influence employee turnover?
 
-\* Does work-life balance affect employee retention?
+* How does employee tenure relate to attrition?
 
-\* Does business travel influence employee turnover?
+* Which employee segments may require greater retention attention?
 
-\* How does employee tenure relate to attrition?
+---
 
-\* Which employee segments may require greater retention attention?
-
-
-
-\---
-
-
-
-\# 🔄 Project Workflow
-
-
+## 🔄 Project Workflow
 
 ```text
 
@@ -102,145 +119,107 @@ Business Insights
 
 ```
 
+---
 
-
-\---
-
-
-
-\# 🗄️ 1. SQL Server – Data Preparation \& Analysis
-
-
+# 🗄️ 1. SQL Server – Data Preparation & Analysis
 
 SQL Server was used for data storage, data cleaning, validation, KPI analysis, and advanced analytical queries.
 
+### Key Activities
 
+* Imported the HR dataset into SQL Server
 
-\### Key Activities
+* Created the HR analytics database
 
+* Created the `HR_Data` table
 
+* Validated data structure and records
 
-\* Imported the HR dataset into SQL Server
+* Removed unnecessary columns such as:
 
-\* Created the HR analytics database
+&#x20; * `EmployeeCount`
 
-\* Created the `HR\_Data` table
+&#x20; * `Over18`
 
-\* Validated data structure and records
+&#x20; * `StandardHours`
 
-\* Removed unnecessary columns such as:
+* Converted the `Attrition` field from Yes/No into a binary `1/0` flag
 
+* Calculated employee and attrition KPIs
 
+* Performed department-level analysis
 
-&#x20; \* `EmployeeCount`
+* Performed salary ranking analysis
 
-&#x20; \* `Over18`
+* Identified high-risk departments
 
-&#x20; \* `StandardHours`
+### Advanced SQL Concepts Used
 
-\* Converted the `Attrition` field from Yes/No into a binary `1/0` flag
+* `SELECT`
 
-\* Calculated employee and attrition KPIs
+* `WHERE`
 
-\* Performed department-level analysis
+* `GROUP BY`
 
-\* Performed salary ranking analysis
+* `CASE`
 
-\* Identified high-risk departments
+* Aggregate Functions
 
+* Conditional Aggregation
 
+* CTEs (Common Table Expressions)
 
-\### Advanced SQL Concepts Used
+* Window Functions
 
+* Ranking Functions
 
+---
 
-\* `SELECT`
-
-\* `WHERE`
-
-\* `GROUP BY`
-
-\* `CASE`
-
-\* Aggregate Functions
-
-\* Conditional Aggregation
-
-\* CTEs (Common Table Expressions)
-
-\* Window Functions
-
-\* Ranking Functions
-
-
-
-\---
-
-
-
-\# 🐍 2. Python – Exploratory Data Analysis
-
-
+# 🐍 2. Python – Exploratory Data Analysis
 
 Python was used for exploratory data analysis, data validation, visualization, and preparation of the cleaned dataset.
 
+### Libraries Used
 
+* Pandas
 
-\### Libraries Used
+* NumPy
 
+* Matplotlib
 
+* Jupyter Notebook
 
-\* Pandas
+### EDA Activities
 
-\* NumPy
+* Loaded and inspected the dataset
 
-\* Matplotlib
+* Checked dataset structure
 
-\* Jupyter Notebook
+* Performed data cleaning
 
+* Analyzed employee attrition
 
+* Analyzed department-wise attrition
 
-\### EDA Activities
+* Examined salary distributions
 
+* Analyzed employee age patterns
 
+* Studied relationships between numerical variables
 
-\* Loaded and inspected the dataset
+* Created correlation analysis
 
-\* Checked dataset structure
+### Visualizations Created
 
-\* Performed data cleaning
+* Attrition Pie Chart
 
-\* Analyzed employee attrition
+* Department-wise Attrition Bar Chart
 
-\* Analyzed department-wise attrition
+* Box Plots
 
-\* Examined salary distributions
+* Correlation Heatmap
 
-\* Analyzed employee age patterns
-
-\* Studied relationships between numerical variables
-
-\* Created correlation analysis
-
-
-
-\### Visualizations Created
-
-
-
-\* Attrition Pie Chart
-
-\* Department-wise Attrition Bar Chart
-
-\* Box Plots
-
-\* Correlation Heatmap
-
-
-
-\### Python Files
-
-
+### Python Files
 
 ```text
 
@@ -250,153 +229,99 @@ cleaned\_data.csv
 
 ```
 
+---
 
-
-\---
-
-
-
-\# 📊 3. Power BI – Business Intelligence Dashboard
-
-
+# 📊 3. Power BI – Business Intelligence Dashboard
 
 Power BI was used to create interactive HR dashboards using DAX measures and business-oriented visualizations.
 
+### Core DAX Measures
 
+* Total Employees
 
-\### Core DAX Measures
+* Active Employees
 
+* Attrition Employees
 
+* Attrition Rate
 
-\* Total Employees
+* Average Monthly Income
 
-\* Active Employees
+### Power BI Dashboards
 
-\* Attrition Employees
-
-\* Attrition Rate
-
-\* Average Monthly Income
-
-
-
-\### Power BI Dashboards
-
-
-
-\#### Dashboard 1 – Executive Overview
-
-
+#### Dashboard 1 – Executive Overview
 
 Provides a high-level overview of:
 
+* Workforce size
 
+* Employee attrition
 
-\* Workforce size
+* Attrition rate
 
-\* Employee attrition
+* Workforce demographics
 
-\* Attrition rate
+* Department-level trends
 
-\* Workforce demographics
-
-\* Department-level trends
-
-
-
-\#### Dashboard 2 – Employee Demographics \& Job Factors
-
-
+#### Dashboard 2 – Employee Demographics & Job Factors
 
 Analyzes employee demographics and job-related factors associated with employee attrition.
 
-
-
-\#### Dashboard 3 – Salary, Performance \& Attrition Insights
-
-
+#### Dashboard 3 – Salary, Performance & Attrition Insights
 
 Focuses on:
 
+* Salary
 
+* Performance
 
-\* Salary
+* Employee retention
 
-\* Performance
+* Attrition-related factors
 
-\* Employee retention
+### Additional Features
 
-\* Attrition-related factors
+* Interactive filters
 
+* KPI cards
 
+* Corporate dashboard theme
 
-\### Additional Features
+* Page navigation
 
+* Data Dictionary & Metric Documentation
 
+---
 
-\* Interactive filters
-
-\* KPI cards
-
-\* Corporate dashboard theme
-
-\* Page navigation
-
-\* Data Dictionary \& Metric Documentation
-
-
-
-\---
-
-
-
-\# 📈 4. Tableau – HR Analytics Dashboards
-
-
+# 📈 4. Tableau – HR Analytics Dashboards
 
 Tableau was used to recreate and enhance the HR analytics solution using the same business logic and analytical definitions.
 
+The final Tableau workbook contains **2 interactive dashboards**.
 
+---
 
-The final Tableau workbook contains \*\*2 interactive dashboards\*\*.
-
-
-
-\---
-
-
-
-\# 📊 Dashboard 1 – HR Workforce \& Attrition Overview
-
-
+# 📊 Dashboard 1 – HR Workforce & Attrition Overview
 
 This dashboard provides an overall view of the organization's workforce and employee attrition.
 
+## KPIs
 
+* Total Employees
 
-\## KPIs
+* Active Employees
 
+* Attrition Employees
 
+* Attrition Rate
 
-\* Total Employees
+* Average Age
 
-\* Active Employees
+* Average Monthly Income
 
-\* Attrition Employees
+* Average Years at Company
 
-\* Attrition Rate
-
-\* Average Age
-
-\* Average Monthly Income
-
-\* Average Years at Company
-
-
-
-\## Charts
-
-
+## Charts
 
 | Analysis                      | Chart Type     |
 
@@ -416,53 +341,35 @@ This dashboard provides an overall view of the organization's workforce and empl
 
 | Attrition by Salary Band      | Bar Chart      |
 
+## Filters
 
+* Department
 
-\## Filters
+* Job Role
 
+* Gender
 
+* Overtime
 
-\* Department
+---
 
-\* Job Role
-
-\* Gender
-
-\* Overtime
-
-
-
-\---
-
-
-
-\# 📊 Dashboard 2 – HR Attrition \& Performance Analysis
-
-
+# 📊 Dashboard 2 – HR Attrition & Performance Analysis
 
 This dashboard focuses on deeper analysis of employee attrition and performance-related factors.
 
+## KPIs
 
+* Total Employees
 
-\## KPIs
+* Attrition Employees
 
+* Attrition Rate
 
+* Average Monthly Income
 
-\* Total Employees
+* Average Years at Company
 
-\* Attrition Employees
-
-\* Attrition Rate
-
-\* Average Monthly Income
-
-\* Average Years at Company
-
-
-
-\## Charts
-
-
+## Charts
 
 | Analysis                       | Chart Type     |
 
@@ -480,39 +387,25 @@ This dashboard focuses on deeper analysis of employee attrition and performance-
 
 | Attrition by Business Travel   | Bar Chart      |
 
+## Filters
 
+* Department
 
-\## Filters
+* Job Role
 
+* Gender
 
+* Age Group
 
-\* Department
+* Overtime
 
-\* Job Role
+---
 
-\* Gender
-
-\* Age Group
-
-\* Overtime
-
-
-
-\---
-
-
-
-\# 🧮 5. Calculated Fields
-
-
+# 🧮 5. Calculated Fields
 
 Several calculated fields were created in Tableau to support employee segmentation and attrition analysis.
 
-
-
-\## Attrition Rate
-
-
+## Attrition Rate
 
 ```text
 
@@ -520,23 +413,13 @@ Attrition Employees / Total Employees
 
 ```
 
-
-
 The Attrition Rate measures the percentage of employees who left the organization.
 
+---
 
-
-\---
-
-
-
-\## Age Group
-
-
+## Age Group
 
 Employees were segmented into five age groups:
-
-
 
 | Age Group | Age Range    |
 
@@ -552,19 +435,11 @@ Employees were segmented into five age groups:
 
 | 55+       | 55 and above |
 
+---
 
-
-\---
-
-
-
-\## Salary Band
-
-
+## Salary Band
 
 Employees were categorized into four monthly income bands:
-
-
 
 | Salary Band | Monthly Income   |
 
@@ -578,13 +453,9 @@ Employees were categorized into four monthly income bands:
 
 | 10K+        | 10,000 and above |
 
+---
 
-
-\---
-
-
-
-\# 📌 6. Key Metrics
+# 📌 6. Key Metrics
 
 The final analysis uses the following verified project-level metrics:
 
@@ -615,8 +486,6 @@ The final analysis uses the following verified project-level metrics:
 | Average Performance Rating | Average performance rating |
 
 # 📖 7. Data Dictionary
-
-
 
 | Column          | Description                                |
 
@@ -652,227 +521,165 @@ The final analysis uses the following verified project-level metrics:
 
 | JobInvolvement  | Employee job involvement level             |
 
+---
 
-
-\---
-
-
-
-\# 🔎 8. Key Insights
-
-
+# 🔎 8. Key Insights
 
 The analysis focuses on identifying important employee attrition patterns, including:
 
+* Departments with comparatively higher employee attrition
 
+* Job roles with higher employee turnover
 
-\* Departments with comparatively higher employee attrition
+* Attrition patterns across different age groups
 
-\* Job roles with higher employee turnover
+* Relationship between overtime and employee attrition
 
-\* Attrition patterns across different age groups
+* Salary bands associated with employee turnover
 
-\* Relationship between overtime and employee attrition
+* Relationship between job satisfaction and attrition
 
-\* Salary bands associated with employee turnover
+* Relationship between work-life balance and attrition
 
-\* Relationship between job satisfaction and attrition
+* Business travel patterns associated with employee attrition
 
-\* Relationship between work-life balance and attrition
-
-\* Business travel patterns associated with employee attrition
-
-\* Employee tenure and attrition patterns
-
-
+* Employee tenure and attrition patterns
 
 These insights can help HR teams identify employee segments that may require additional retention strategies.
 
+---
 
+# 🛠️ 9. Tools & Technologies
 
-\---
+## Data Analysis
 
+* Python
 
+* Pandas
 
-\# 🛠️ 9. Tools \& Technologies
+* NumPy
 
+* Matplotlib
 
+* Jupyter Notebook
 
-\## Data Analysis
+## Database
 
+* Microsoft SQL Server
 
+* SQL
 
-\* Python
+* CTEs
 
-\* Pandas
+* Window Functions
 
-\* NumPy
+## Business Intelligence
 
-\* Matplotlib
+* Microsoft Power BI
 
-\* Jupyter Notebook
+* DAX
 
+* Tableau
 
+## Development & Version Control
 
-\## Database
+* Git
 
+* GitHub
 
+---
 
-\* Microsoft SQL Server
-
-\* SQL
-
-\* CTEs
-
-\* Window Functions
-
-
-
-\## Business Intelligence
-
-
-
-\* Microsoft Power BI
-
-\* DAX
-
-\* Tableau
-
-
-
-\## Development \& Version Control
-
-
-
-\* Git
-
-\* GitHub
-
-
-
-\---
-
-
-
-\# 🎯 10. Skills Demonstrated
-
-
+# 🎯 10. Skills Demonstrated
 
 This project demonstrates practical skills in:
 
+* Data Cleaning
 
+* Data Validation
 
-\* Data Cleaning
+* Exploratory Data Analysis
 
-\* Data Validation
+* SQL Querying
 
-\* Exploratory Data Analysis
+* Advanced SQL
 
-\* SQL Querying
+* CTEs
 
-\* Advanced SQL
+* Window Functions
 
-\* CTEs
+* Data Aggregation
 
-\* Window Functions
+* KPI Development
 
-\* Data Aggregation
+* DAX
 
-\* KPI Development
+* Tableau Calculated Fields
 
-\* DAX
+* Data Visualization
 
-\* Tableau Calculated Fields
+* Dashboard Development
 
-\* Data Visualization
+* Interactive Filtering
 
-\* Dashboard Development
+* Dashboard Navigation
 
-\* Interactive Filtering
+* Business Analysis
 
-\* Dashboard Navigation
+* HR Analytics
 
-\* Business Analysis
+* Data Storytelling
 
-\* HR Analytics
+* Cross-Platform BI Development
 
-\* Data Storytelling
+---
 
-\* Cross-Platform BI Development
-
-
-
-\---
-
-
-
-\# 🧭 11. Dashboard Navigation
-
-
+# 🧭 11. Dashboard Navigation
 
 The Tableau dashboards include an interactive navigation bar that allows users to switch between the two dashboards:
 
-
-
 ```text
 
-HR Workforce \& Attrition Overview
+HR Workforce & Attrition Overview
 
 &#x20;             ↕
 
-HR Attrition \& Performance Analysis
+HR Attrition & Performance Analysis
 
 ```
 
-
-
 The active dashboard button uses a highlighted background to clearly indicate the current dashboard.
 
+---
 
-
-\---
-
-
-
-\# 🎨 12. Dashboard Design \& Formatting
-
-
+# 🎨 12. Dashboard Design & Formatting
 
 The dashboards were designed with a clean, professional, and business-oriented layout.
 
+### Design Features
 
+* Consistent dashboard titles
 
-\### Design Features
+* KPI card formatting
 
+* Consistent chart titles
 
+* Proper chart alignment
 
-\* Consistent dashboard titles
+* Structured rows and columns
 
-\* KPI card formatting
+* Balanced dashboard spacing
 
-\* Consistent chart titles
+* Organized filters
 
-\* Proper chart alignment
+* Interactive navigation
 
-\* Structured rows and columns
+* Consistent visual hierarchy
 
-\* Balanced dashboard spacing
+* Business-focused dashboard presentation
 
-\* Organized filters
+---
 
-\* Interactive navigation
-
-\* Consistent visual hierarchy
-
-\* Business-focused dashboard presentation
-
-
-
-\---
-
-
-
-\# 📁 13. Project Structure
+# 📁 13. Project Structure
 
 The GitHub version of this project is organized to showcase the analysis while avoiding publication of the original Power BI and Tableau packaged files.
 
@@ -954,13 +761,13 @@ The cleaned dataset is included as the reproducible public analysis dataset.
 
 ### EDA Visualizations
 
-![Age Distribution](7_Images/Jupyer%20Notebook/age_distribution_histogram.png)
+![Age Distribution](7_Images/Jupyter%20Notebook/age_distribution_histogram.png)
 
-![Correlation Heatmap](7_Images/Jupyer%20Notebook/correlation_heatmap.png)
+![Correlation Heatmap](7_Images/Jupyter%20Notebook/correlation_heatmap.png)
 
-![Department Attrition](7_Images/Jupyer%20Notebook/department_attrition_bar_chart.png)
+![Department Attrition](7_Images/Jupyter%20Notebook/department_attrition_bar_chart.png)
 
-![Income vs Attrition](7_Images/Jupyer%20Notebook/income_vs_attrition_boxplot.png)
+![Income vs Attrition](7_Images/Jupyter%20Notebook/income_vs_attrition_boxplot.png)
 
 # 📦 15. BI Source Files
 
@@ -980,15 +787,9 @@ This keeps the portfolio repository focused on reproducible analysis and public-
 
 # 🏆 16. Project Outcome
 
-
-
 This project demonstrates an end-to-end approach to solving a real-world HR analytics problem.
 
-
-
 Starting from raw employee data, the project covers:
-
-
 
 ```text
 
@@ -1020,39 +821,29 @@ Business Insights
 
 ```
 
-
-
 The final solution provides an interactive analytical framework for understanding:
 
+* Workforce composition
 
+* Employee attrition
 
-\* Workforce composition
+* Compensation
 
-\* Employee attrition
+* Job satisfaction
 
-\* Compensation
+* Work-life balance
 
-\* Job satisfaction
+* Business travel
 
-\* Work-life balance
+* Employee tenure
 
-\* Business travel
+* Department and job-role level attrition
 
-\* Employee tenure
+The project also demonstrates the ability to apply consistent business logic across **SQL, Python, Power BI, and Tableau**, making it a strong portfolio project for **Data Analyst and Business Analyst roles**.
 
-\* Department and job-role level attrition
+---
 
-
-
-The project also demonstrates the ability to apply consistent business logic across \*\*SQL, Python, Power BI, and Tableau\*\*, making it a strong portfolio project for \*\*Data Analyst and Business Analyst roles\*\*.
-
-
-
-\---
-
-
-
-\# 🔐 Public Repository Notes
+## 🔐 Public Repository Notes
 
 This GitHub repository is prepared as a portfolio version of the project. The public version includes the cleaned dataset, SQL analysis, Python notebook, dashboard PDF/screenshots, and final documentation. Original `.pbix` and `.twbx` files are intentionally excluded from the public repository.
 
@@ -1060,25 +851,15 @@ The analysis uses `1 = Left` and `0 = Active` for the binary attrition represent
 
 ---
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 
+### ARKAY
 
+**Data Analytics · SQL · Python · Power BI · Tableau**
 
-\## ARKAY
+---
 
-
-
-\*\*Data Analytics | SQL | Python | Power BI | Tableau\*\*
-
-
-
-\---
-
-
-
-\# ⭐ Project Highlights
-
-
+## ⭐ Project Highlights
 
 ```text
 
@@ -1115,6 +896,3 @@ The analysis uses `1 = Left` and `0 = Active` for the binary attrition represent
 ✔ Portfolio-Ready Project
 
 ```
-
-
-
