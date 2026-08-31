@@ -1,277 +1,285 @@
 <p align="center">
-  <img src="4_Images/FMCG_Sales_Performance_Cover.png"
-       alt="FMCG Sales Performance Dashboard"
-       width="100%">
+  <img src="4_Images/FMCG_Sales_Performance_Dashboard-1.png" alt="FMCG Sales Performance Dashboard" width="100%">
 </p>
 
-<h1 align="center">FMCG Sales Performance Dashboard</h1>
+<h1 align="center">📊 FMCG Sales Performance Dashboard</h1>
 
 <p align="center">
-  <strong>Executive Sales Overview | 2023–2025</strong>
+  <strong>Interactive Sales & Profitability Analysis using Microsoft Power BI</strong>
 </p>
 
 <p align="center">
-  Interactive FMCG Sales & Profitability Analysis using Microsoft Power BI
+  <strong>2023–2025 | Syntecxhub Data Analysis Internship | Project 1</strong>
 </p>
 
----
+📌 Project Overview
 
-## 📌 Project Overview
+The FMCG Sales Performance Dashboard is an interactive Power BI project developed as part of the Syntecxhub Data Analysis Internship.
 
-The **FMCG Sales Performance Dashboard** is an interactive **Power BI data analytics project** developed as part of the **Syntecxhub Data Analysis Internship**.
+The project analyzes FMCG sales data from 2023–2025 to understand sales trends, revenue, profitability, product performance, regional performance, customer types, and sales channels.
 
-The project analyzes FMCG sales data from **2023–2025** to understand sales trends, revenue, profitability, product performance, regional performance, customer types, and sales channels.
+The dashboard is designed to convert transactional sales data into clear and actionable business insights.
 
-The dashboard transforms transactional sales data into **clear, interactive, and actionable business insights**.
+🎯 Business Objectives
 
----
+Analyze monthly, quarterly, and yearly sales performance.
 
-## 🎯 Business Objectives
+Track revenue and profit.
 
-The main objectives of this project are:
+Identify top-selling and high-profit products.
 
-- Analyze **monthly, quarterly, and yearly sales trends**
-- Track **revenue, profit, orders, and units sold**
-- Identify **top-selling products**
-- Compare performance across **product categories**
-- Analyze **region-wise sales performance**
-- Compare different **sales channels**
-- Evaluate **customer type performance**
-- Identify profitable products and categories
-- Monitor key business KPIs through an interactive dashboard
+Compare sales and profitability across regions.
 
----
+Compare performance across product categories.
 
-## 📊 Dataset Summary
+Analyze sales-channel performance.
 
-| Attribute | Details |
-|---|---|
-| **Data Source** | Kaggle |
-| **Dataset** | FMCG Sales & Marketing Profitability Dataset |
-| **Analysis Period** | 2023–2025 |
-| **Data Type** | Transactional Sales Data |
-| **Primary Tool** | Microsoft Power BI |
+Monitor important sales and profitability KPIs.
 
-### Key Dataset Fields
+Build an interactive business dashboard using Power BI.
 
-The dataset contains information related to:
+📂 Dataset
 
-- Order ID
-- Order Date
-- Year
-- Quarter
-- Month
-- Region
-- Country
-- City
-- Sales Person
-- Customer Type
-- Sales Channel
-- Promotion Type
-- Product Category
-- Brand
-- Product Name
-- SKU
-- Units Sold
-- Unit Price
-- Discount
-- Gross Sales
-- Marketing Spend
-- COGS
-- Logistics Cost
-- Net Revenue
-- Profit
-- Profit Margin
+FMCG Sales & Profit Dataset (2023–2025)
 
----
+Source: Kaggle
 
-## 🛠️ Tools & Technologies Used
+Kaggle Source:
+https://www.kaggle.com/code/jek1wantaufik/fmcg-sales-profit-dataset-2023-2025/input
 
-- **Microsoft Power BI** – Dashboard development, visualization and interactive analysis
-- **Power Query** – Data cleaning and transformation
-- **DAX** – KPI calculations and analytical measures
-- **Microsoft Excel / CSV** – Dataset storage and preparation
+The dataset contains transactional FMCG sales information covering products, customers, regions, sales channels, discounts, costs, revenue, and profit.
 
-> This project was developed using **Power BI only** for the analytical and visualization workflow.
+Main Fields
 
----
+Category
 
-## 🔄 Project Workflow
+Fields
 
-### 1. Data Collection
+Order & Time
 
-The FMCG sales dataset was sourced from **Kaggle**.
+Order ID, Order Date, Year, Quarter, Month
 
-The dataset contains transactional sales, product, customer, regional, cost, revenue and profitability information.
+Location
 
----
+Region, Country, City
 
-### 2. Data Preparation
+Sales
 
-The raw dataset was imported into **Power BI** and prepared using **Power Query**.
+Sales Person, Sales Channel, Customer Type
 
-Data preparation included:
+Promotion
 
-- Checking missing values
-- Checking duplicate records
-- Correcting data types
-- Formatting date fields
-- Reviewing categorical fields
-- Preparing fields for analysis
-- Creating required calculated measures
+Promotion Type, Discount %
 
----
+Product
 
-### 3. Data Analysis
+Product Category, Brand, Product Name, SKU
 
-Business performance was analyzed across multiple dimensions:
+Volume & Price
 
-- Time
-- Region
-- Product Category
-- Product
-- Customer Type
-- Sales Channel
-- Profitability
+Units Sold, Unit Price
 
----
+Financials
 
-### 4. Dashboard Development
+Gross Sales, Marketing Spend, COGS, Logistics Cost, Net Revenue, Profit
 
-An interactive Power BI dashboard was created using:
+Profitability
 
-- KPI Cards
-- Line / Area Charts
-- Clustered Column Charts
-- Bar Charts
-- Donut Charts
-- Slicers
-- Data Labels
-- Interactive Filters
+Profit Margin %
 
----
+🧹 Data Preparation
 
-# 📈 Dashboard Pages
+The dataset was imported into Power BI and prepared using Power Query.
 
-## 1. Executive Sales Overview
+The preparation process included:
 
-The **Executive Sales Overview** provides a high-level summary of FMCG business performance.
+Reviewing missing values
 
-### Key KPIs
+Checking duplicate records
 
-- **Total Revenue**
-- **Total Profit**
-- **Total Orders**
-- **Total Units Sold**
-- **Profit Margin %**
-- **Sales Growth %**
+Validating column data types
 
-### Visual Analysis
+Preparing date fields for time-based analysis
 
-- Monthly Sales Trend
-- Sales by Customer Type
-- Sales by Sales Channel
-- Sales by Region
-- Sales by Product Category
-- Top 10 Selling Products
+Reviewing sales, cost, revenue, and profit fields
 
----
+Creating the required calculated measures and KPIs in Power BI
 
-## 2. Detailed Sales & Profitability Analysis
+📊 Dashboard Pages
 
-The second dashboard page provides a deeper analysis of sales and profitability.
+Page 1 — Executive Sales Overview
 
-### Key KPIs
+Provides a high-level view of overall business performance.
 
-- **Average Order Value**
-- **Average Profit per Order**
-- **Average Discount %**
-- **Average Profit Margin**
-- **Revenue per Unit**
-- **Profit per Unit**
+KPIs
 
-### Visual Analysis
+Total Revenue
 
-- Profit by Product Category
-- Sales by Product Category
-- Revenue by Sales Channel
-- Profit by Region
-- Regional Performance
-- Top 10 Products by Profit
+Total Profit
 
-Interactive slicers allow users to filter the analysis by:
+Total Orders
 
-- **Year**
-- **Region**
-- **Product Category**
-- **Customer Segment**
+Total Units Sold
 
----
+Profit Margin %
 
-## 📸 Dashboard Screenshots
+Sales Growth %
 
-### Executive Sales Overview
+Visuals
+
+Monthly Sales Trend
+
+Sales by Customer Type
+
+Sales by Sales Channel
+
+Sales by Region
+
+Sales by Product Category
+
+Top 10 Selling Products
+
+Slicers
+
+Year
+
+Quarter
+
+Month
+
+Page 2 — Detailed Sales & Profitability Analysis
+
+Provides a deeper analysis of profitability and operational performance.
+
+KPIs
+
+Average Order Value
+
+Average Profit per Order
+
+Average Discount %
+
+Average Profit Margin
+
+Revenue per Unit
+
+Profit per Unit
+
+Visuals
+
+Profit by Product Category
+
+Sales by Product Category
+
+Revenue by Sales Channel
+
+Profit by Region
+
+Regional Performance
+
+Top 10 Products by Profit
+
+Slicers
+
+Year
+
+Region
+
+Product Category
+
+Customer Segment
+
+🖼️ Dashboard Screenshots
+
+1. Executive Sales Overview
 
 <p align="center">
-  <img src="4_Images/FMCG_Sales_Performance_Dashboard-2.png"
-       alt="FMCG Executive Sales Overview"
-       width="100%">
+  <img src="4_Images/FMCG_Sales_Performance_Dashboard-1.png" alt="Executive Sales Overview" width="100%">
 </p>
 
----
-
-### Detailed Sales & Profitability Analysis
+2. Detailed Sales & Profitability Analysis
 
 <p align="center">
-  <img src="4_Images/FMCG_Sales_Performance_Dashboard-1.png"
-       alt="FMCG Detailed Sales and Profitability Analysis"
-       width="100%">
+  <img src="4_Images/FMCG_Sales_Performance_Dashboard-2.png" alt="Detailed Sales and Profitability Analysis" width="100%">
 </p>
 
----
+🔍 Key Analysis Areas
 
-## 🔑 Key Performance Indicators
+📈 Sales Trend Analysis
 
-The dashboard tracks the following important business KPIs:
+Monthly, quarterly, and yearly sales performance is analyzed to understand business growth and fluctuations.
 
-| KPI | Purpose |
-|---|---|
-| **Total Revenue** | Measures overall revenue generated |
-| **Total Profit** | Measures overall business profitability |
-| **Total Orders** | Measures transaction volume |
-| **Total Units Sold** | Measures product sales volume |
-| **Profit Margin %** | Measures profitability efficiency |
-| **Sales Growth %** | Measures business growth over time |
-| **Average Order Value** | Measures average revenue per order |
-| **Average Profit per Order** | Measures average profit generated per order |
-| **Average Discount %** | Tracks discounting levels |
-| **Revenue per Unit** | Measures revenue generated per unit |
-| **Profit per Unit** | Measures profit generated per unit |
+🛍️ Product Analysis
 
----
+Product categories and individual products are compared based on sales and profitability.
 
-## 💡 Key Business Insights
+🌍 Regional Analysis
 
-The dashboard helps identify important business patterns such as:
+Sales and profit are compared across different geographical regions.
 
-1. **Sales performance varies significantly across regions**, allowing management to identify high-performing and underperforming markets.
+🛒 Sales Channel Analysis
 
-2. **Product categories contribute differently to overall revenue and profit**, helping identify categories with stronger profitability.
+Revenue contribution is compared across available sales channels.
 
-3. **Wholesale and Distributor channels contribute a significant portion of sales**, highlighting the importance of channel performance.
+💰 Profitability Analysis
 
-4. **Top-selling products can be identified using sales volume**, while the most profitable products can be evaluated separately using profit.
+Profit, profit margin, discount, revenue per unit, and profit per order are used to understand business profitability.
 
-5. **Profitability analysis provides a better business perspective than revenue alone**, because high-revenue products may not always generate the highest profit.
+💡 Business Insights
 
-6. **Monthly sales trends help identify growth patterns and fluctuations** across the 2023–2025 period.
+The dashboard helps business users:
 
----
+Identify high-performing products and categories
 
-## 📁 Project Folder Structure
+Understand which regions contribute strongly to sales and profit
 
-```text
+Compare different sales channels
+
+Monitor sales growth over time
+
+Evaluate profitability beyond revenue
+
+Analyze the impact of discounts and costs on profit
+
+Make data-driven sales and business decisions
+
+🛠️ Tools & Technologies
+
+Tool / Technology
+
+Purpose
+
+Microsoft Power BI
+
+Dashboard development and data visualization
+
+Power Query
+
+Data preparation and transformation
+
+DAX
+
+KPI and calculated measure creation
+
+CSV Dataset
+
+Source data
+
+GitHub
+
+Project version control and portfolio
+
+Kaggle
+
+Dataset source
+
+Note: This project was developed using Power BI only for analysis and dashboard development. Python and SQL were not used in this project.
+
+📁 Project Structure
+
 Syntecxhub_FMCG_Sales_Performance_Dashboard/
+│
+├── README.md
 │
 ├── 1_Data/
 │   └── fmcg_sales_marketing_profitability_2023_2025.csv
@@ -283,9 +291,48 @@ Syntecxhub_FMCG_Sales_Performance_Dashboard/
 ├── 3_Documentation/
 │   └── Project_Documentation.pdf
 │
-├── 4_Images/
-│   ├── FMCG_Sales_Performance_Cover.png
-│   ├── FMCG_Sales_Performance_Dashboard-1.png
-│   └── FMCG_Sales_Performance_Dashboard-2.png
-│
-└── README.md
+└── 4_Images/
+    ├── FMCG_Sales_Performance_Dashboard-1.png
+    └── FMCG_Sales_Performance_Dashboard-2.png
+
+🎓 Internship Information
+
+Detail
+
+Information
+
+Organization
+
+Syntecxhub
+
+Internship
+
+Data Analysis Internship
+
+Project
+
+Sales Performance Dashboard
+
+Project Number
+
+Project 1
+
+This project follows the internship requirement to analyze a sales dataset and create an interactive dashboard using Power BI.
+
+📌 Conclusion
+
+The FMCG Sales Performance Dashboard provides an interactive view of sales and profitability across time, products, regions, customer types, and sales channels.
+
+The project demonstrates practical skills in:
+
+Data Preparation → Power Query → DAX → KPI Creation → Data Visualization → Dashboard Design → Business Analysis
+
+using Microsoft Power BI.
+
+👨‍💻 Author
+
+Ravindra Deo Kuldeep
+
+Data Analytics Portfolio Project
+
+⭐ If you find this project useful, feel free to explore the repository.
